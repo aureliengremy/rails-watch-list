@@ -1,1 +1,35 @@
 // Specific CSS for your home-page
+.hero {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f5c7f39e-6019-4372-9030-d351ed796b5f/dddve9s-b73f4e90-9201-43a6-94fe-016df547e25a.jpg/v1/fill/w_1024,h_576,q_75,strp/batman_logo__metal__by_danielbeadle_dddve9s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvZjVjN2YzOWUtNjAxOS00MzcyLTkwMzAtZDM1MWVkNzk2YjVmXC9kZGR2ZTlzLWI3M2Y0ZTkwLTkyMDEtNDNhNi05NGZlLTAxNmRmNTQ3ZTI1YS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.cXDWncrw3Z3VwWKW0ShpNU8F98SoYtHZHOwt5wwG5eQ);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  &-title {
+    color: #ffffff;
+    text-shadow:0px 0px 20px #000000;
+  }
+  &-text {
+    color: #c0c0c0;
+    text-shadow:0px 0px 20px #000000;
+  }
+  &-btn {
+    box-shadow: 0px 0px 2px #ffffff;
+  }
+  &-btn:hover {
+    box-shadow: 0px 0px 8px #ff0000;
+  }
+}
+
+.movies-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.movie {
+  width: auto;
+  &-img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+  }
+}

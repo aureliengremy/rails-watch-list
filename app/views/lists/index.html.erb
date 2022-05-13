@@ -1,0 +1,25 @@
+<section class="hero">
+<div class="py-5 text-center container">
+    <div class="row py-lg-3">
+      <div class="col-lg-7 col-md-8 mx-auto">
+        <h1 class="fw-bolder hero-title">Best Batman Movie List</h1>
+        <p class="lead hero-text">Give your opinion for justice, create the best list to save Gotham !</p>
+        <%= link_to "Create your list!", new_list_path, class: 'hero-btn btn btn-secondary my-4' %>
+    </div>
+  </div>
+</div>
+</section>
+<section class="py-5 container">
+<%= render "list-card" %>
+<div class="movies-container">
+  <% @movies.each do |movie| %>
+  <div class="movie">
+      <%= image_tag(movie.poster_url, data: { title: movie.title }, class:'movie-img') %>
+  </div>
+  <% end %>
+</div>
+<%# <% @lists.each do |list| %>
+  <%# <%= link_to list.name, list_path(list) %>
+<%# <% end %>
+
+</section>

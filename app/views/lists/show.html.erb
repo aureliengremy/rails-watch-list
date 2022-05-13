@@ -1,0 +1,14 @@
+<section class="py-5 container">
+  <%= link_to "Back 🦇", lists_path %>
+  <h1>Show : list</h1>
+
+  <%= @list.name %> </p>
+
+  <p>Bookmarks:</p>
+  <% @list.bookmarks.each do |bookmark| %>
+    <%= bookmark.comment %>
+    <%= link_to "delete", bookmark_path(bookmark), method: :delete %>
+  <% end %>
+
+  <%= link_to 'New bookmark', new_list_bookmark_path(@list) %>
+</section>
