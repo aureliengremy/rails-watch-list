@@ -1,0 +1,10 @@
+<section class="py-5 container">
+  <%= link_to "Back 🦇", movies_path %>
+  <h1>Movie : <%= @movie.title %></h1>
+
+  <%= image_tag(@movie.poster_url, data: { title: @movie.title }, width:"300") %>
+
+  <p><%= @movie.overview %></p>
+
+
+</section>
